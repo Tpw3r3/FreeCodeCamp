@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey is to see how prepared you are for spooky season with All Hallow's Eve just around the corner.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+        <label for="number" id="number-label">Age: <input id="number" name="age" type="number" min="2" max="130" placeholder="Enter your age"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" id="dropdown-label">Are you decorating your house for Halloween? 
+          <select id="dropdown" name="decor">
+            <option value="">(Select one)</option>
+            <option value="1">Yes, I have decorations all over my yard!</option>
+            <option value="2">Yes, I have a few things outside or set up in my house.</option>
+            <option value="3">I only have some pumpkins to put out, but it still counts.</option>
+            <option value="4">No, I didn't have enough Halloween spirit to decorate.</option>
+          </select>
+        </label>
+        <p>Select your chosen costume for this Halloween: </p>
+        <label for="witch-costume">
+          <input id="witch-costume" name="costume" value="witch" type="radio" class="inline">Witch
+        </label>
+        <label for="princess-costume">
+          <input id="princess-costume" name="costume" value="princess" type="radio" class="inline">Princess
+        </label>
+        <label for="scooby-costume">
+          <input id="scooby-costume" name="costume" value="scooby" type="radio" class="inline">Scooby Doo
+        </label>
+        <label for="fairy-costume">
+          <input id="fairy-costume" name="costume" value="fairy" type="radio" class="inline">Fairy
+        </label>
+        <label for="pirate-costume">
+          <input id="pirate-costume" name="costume" value="pirate" type="radio" class="inline">Pirate
+        </label>
+        <label for="vampire-costume">
+          <input id="vampire-costume" name="costume" value="vampire" type="radio" class="inline">Vampire
+        </label>
+        <label for="werewolf-costume">
+          <input id="werewolf-costume" name="costume" value="werewolf" type="radio" class="inline">Werewolf
+        </label>
+        <label for="sanderson-costume">
+          <input id="sanderson-costume" name="costume" value="sanderson" type="radio" class="inline">Sanderson Sister
+        </label>
+        <label for="addams-costume">
+          <input id="addams-costume" name="costume" value="addams" type="radio" class="inline">Wednesday Addams
+        </label>
+        <label for="other-costume">
+          <input id="other-costume" name="costume" value="other-costume" type="radio" class="inline">Other
+        </label>
+        <label for="custom-costume">
+          <input id="custom-costume" name="costume" value="custom" type="radio" class="inline">Custom
+        </label>
+        <label for="no-costume">
+          <input id="no-costume" name="costume" value="no-costume" type="radio" class="inline">No costume
+        </label>
+        <p>How are you celebrating? <br>(Check all that apply)</p>
+        <label for="tot-celebrate">
+          <input id="tot-celebrate" name="celebrate" value="trick-or-treating" type="checkbox" class="inline">Trick-or-treating
+        </label>
+        <label for="movies-celebrate">
+          <input id="movies-celebrate" name="celebrate" value="halloween-movies" type="checkbox" class="inline">Halloween Movies
+        </label>
+        <label for="party-celebrate">
+          <input id="party-celebrate" name="celebrate" value="party" type="checkbox" class="inline">Party
+        </label>
+        <label for="hh-celebrate">
+          <input id="hh-celebrate" name="celebrate" value="haunted-house" type="checkbox" class="inline">Haunted House
+        </label>
+        <label for="candy-celebrate">
+          <input id="candy-celebrate" name="celebrate" value="candy" type="checkbox" class="inline">CANDY
+        </label>
+        <label for="other-celebrate">
+          <input id="other-celebrate" name="celebrate" value="other-celebrate" type="checkbox" class="inline">Other
+        </label>
+        <label for="comments">Additional comments: 
+          <textarea id="comments" name="comments" rows="10" cols="31"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

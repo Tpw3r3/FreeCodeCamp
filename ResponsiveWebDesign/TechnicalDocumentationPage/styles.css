@@ -1,0 +1,127 @@
+html, body {
+  background-color: #041b14;
+  color: #c3d57b;
+  font-family: "Bodoni 72", serif;
+  line-height: 1.5;
+  min-width: 290px;
+}
+
+#navbar {
+  background-color: #c3d57b;
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #cf431e;
+}
+
+#navbar a {
+  display: block;
+  padding: 2px 22px;
+  color: #cf431e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar li {
+  border-top: 1px solid;
+  color: #cf431e;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #cf431e;
+  text-align: center;
+  margin: 10px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: #c3d57b;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 282px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 260px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px
+  }
+
+  code {
+    width: 100%;
+    min-width: 233px;
+    background-color: #cf431e;
+  }
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+code {
+  background-color: #cf431e;
+  display: block;
+  text-align: left;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  padding: 6px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+strong {
+  color: #cf431e;
+  padding-left: 20px;
+  padding-right: 2px;
+}
+
+#navbar a:hover {
+  background-color: #cf431e;
+  color: #c3d57b;
+}
+
+/* Add in code to keep the navbar at the top of the screen when scrolling in mobile view */
